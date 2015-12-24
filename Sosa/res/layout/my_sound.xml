@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/main_background">
+
+    <Button
+        android:id="@+id/ViewRecording"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnRecord"
+        android:background="@drawable/record_recording"
+         />
+
+    <Button
+        android:id="@+id/btnRecordOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/record_complete" />
+
+    <Button
+        android:id="@+id/btnRerecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/record_rerecord" 
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/btnPlayAndStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ViewRecording"
+        android:layout_alignBottom="@+id/ViewRecording"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/record_play" 
+        android:layout_marginLeft="30dp"/>
+    
+</RelativeLayout>
